@@ -1,0 +1,85 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "montserrat";
+
+    background-image: linear-gradient(93deg,#2c3e50,#27ae60,#2980b9,#e74c3c,#8e44ad);
+    background-size: 400%;
+    animation: bganimation 15s infinite;
+}
+@keyframes bganimation{
+    0%{
+        background-position: 0% 50%; 
+    }
+    50%{
+        background-position: 100% 50%; 
+    }
+    100%{
+        background-position: 0% 50%; 
+    }
+}
+img{
+    width: 200px;
+    height: 300px;
+}
+.wrap{
+    width: 200px;
+    height: 300px;
+    margin: 200px auto;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateX(-12deg);
+    animation: turn 13s infinite;
+    /* 变成匀速 */
+    animation-timing-function: linear;
+
+}
+.photo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.photo:nth-child(1){
+    transform: rotateY(0deg) translateZ(275px);
+}
+.photo:nth-child(2){
+    transform: rotateY(40deg) translateZ(275px);
+}
+.photo:nth-child(3){
+    transform: rotateY(80deg) translateZ(275px);
+}
+/* .photo:nth-child(4){
+    transform: rotateY(120deg) translateZ(275px);
+} */
+/* .photo:nth-child(5){
+    transform: rotateY(160deg) translateZ(275px);
+} */
+.photo:nth-child(4){
+    transform: rotateY(120deg) translateZ(275px);
+}
+.photo:nth-child(5){
+    transform: rotateY(160deg) translateZ(275px);
+}
+.photo:nth-child(6){
+    transform: rotateY(200deg) translateZ(275px);
+}
+.photo:nth-child(7){
+    transform: rotateY(240deg) translateZ(275px);
+} 
+.photo:nth-child(8){
+    transform: rotateY(280deg) translateZ(275px);
+}
+.photo:nth-child(9){
+    transform: rotateY(320deg) translateZ(275px);
+}
+
+@keyframes turn{
+    from{
+        transform: rotateX(-12deg) rotateY(0deg);
+    }
+    to{
+        transform: rotateX(-12deg) rotateY(360deg);
+    }
+}
