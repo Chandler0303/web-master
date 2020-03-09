@@ -1,0 +1,10 @@
+.totalProgress{
+    width: 500px;
+    height: 8px;
+    background-color: red;
+}
+.currentProgress{
+    width: 0;
+    height: 100%;
+    background-color: green;
+}
